@@ -14,6 +14,7 @@ const Search = ()=> {
         .then((response)=>{setResults(response.data.results)})
     }, [keyword])
 
+
     function seeMore (event){
         router.push("/detail/"+event.target.value);
     }
@@ -31,7 +32,6 @@ const Search = ()=> {
                 alert("Successfuly added to your watchlist.")
             }
         })
-        //filter 400 status response
         .catch((error)=>{
             if(error.response.data.data.code===11000){
                 alert("The movie already exists in your watchlist.")

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Axios from 'axios'
 import Image from 'next/image';
 
+
 const Watchlist = () => {
     const router = useRouter();
     const [list, setList] = useState([]);

@@ -15,13 +15,13 @@ const Detail = () => {
         Axios.get("https://imdb-api.com/en/API/Title/"+process.env.IMDB_KEY_1+"/"+id)
         .then((response)=>{
             setDetail(response.data)
+            console.log(response)
         })
-    })
+    }, [])
 
     async function addList(){
         try{
-            console.log("here")
-           const response = await Axios.post("/api/movies", {
+                const response = await Axios.post("/api/movies", {
                 _id: id,
                 title: detail.title,
                 image: detail.image,
