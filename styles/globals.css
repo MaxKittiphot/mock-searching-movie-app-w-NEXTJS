@@ -28,7 +28,7 @@ html, body {
 .link {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 0.5vw;
 }
 
@@ -49,11 +49,11 @@ html, body {
 }
 
 .search-input{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 0.5vw;
 }
 .search-button{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border-radius: 2.5px;
   padding: 3px;
   padding-right: 5px;
@@ -112,7 +112,7 @@ body{
 }
 
 .list-title{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   height: 50px;
 }
 
